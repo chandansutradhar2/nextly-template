@@ -16,22 +16,26 @@ const Home = () => {
   return (
     <>
       <Head>
-        <title>Nextly - Free Nextjs & TailwindCSS Landing Page Template</title>
+        <title>VLearn - Learn Web Development with ease</title>
         <meta
           name="description"
-          content="Nextly is a free landing page template built with next.js & Tailwind CSS"
+          content="Vlearn is an online learning platform for anyone wanting to learn web development in an easy and fun way. "
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <Navbar />
       <Hero />
+      
       <SectionTitle
-        pretitle="Nextly Benefits"
-        title=" Why should you use this landing page">
-        Nextly is a free landing page & marketing website template for startups
-        and indie projects. Its built with Next.js & TailwindCSS. And its
-        completely open-source.
+        pretitle="VLearn Benefits"
+        title=" Why you should learn from us">
+        We have spent 17+ years in web development industry. We know what you
+        need to be an expert in web development. We have designed our courses in
+        such a way that you will learn everything you need to know to be a web
+        developer. We have also designed our courses in a way that you will
+        never get bored. We have used the latest technologies to make our
+        courses interactive and fun.
       </SectionTitle>
       <Benefits data={benefitOne} />
       <Benefits imgPos="right" data={benefitTwo} />
@@ -51,8 +55,9 @@ const Home = () => {
       </SectionTitle>
       <Testimonials />
       <SectionTitle pretitle="FAQ" title="Frequently Asked Questions">
-        Answer your customers possible questions here, it will increase the
-        conversion rate as well as support or chat requests.
+        We have created a list of Frequently asked questions for you so that you can get your doubts cleared and feel free to contact us if you have any other questions.
+        you are still not sure.
+
       </SectionTitle>
       <Faq />
       <Cta />
@@ -60,6 +65,6 @@ const Home = () => {
       <PopupWidget />
     </>
   );
-}
+};
 
 export default Home;

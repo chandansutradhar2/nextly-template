@@ -31,26 +31,38 @@ const Faq = () => {
       </div>
     </Container>
   );
-}
+};
 
 const faqdata = [
   {
-    question: "Is this template completely free to use?",
-    answer: "Yes, this template is completely free to use.",
-  },
-  {
-    question: "Can I use it in a commercial project?",
-    answer: "Yes, this you can.",
-  },
-  {
-    question: "What is your refund policy? ",
+    question: "Is this only for students or professional as well?",
     answer:
-      "If you're unhappy with your purchase for any reason, email us within 90 days and we'll refund you in full, no questions asked.",
+      "Yes, The course covered under VLearn are categoried under 3 level of expertise (Basic, Intermediate & Advanced). So, it is suitable for students as well as professionals.",
+  },
+  {
+    question: "Are subscription monthly or yearly basis?",
+    answer:
+      "currently we offer monthly subscription, but you can subscribe to our yearly plan and get 2 months free. ",
+  },
+  {
+    question: "What is monthly subscription charges?",
+    answer:
+      "our monthly subscription starts at ₹ 299/- per month. You can also subscribe to our yearly plan and get 2 months free. ",
+  },
+  {
+    question: "What I get when I subscribed to a monthly subscription? ",
+    answer:
+      "You will get access to all the courses under the plan you have enrolled to. You are free to enrolled to any course you wish to build your skillset. You will also have access to new courses which we will frequently put up into VLearn platform. You will also get access to our live interactive sessions. ",
+  },
+  {
+    question: "What is your cancellation policy? ",
+    answer:
+      "If you're unhappy with your purchase for any reason, you can cancel your subscription anytime. there is no minimum lock in period for your subscription. ",
   },
   {
     question: "Do you offer technical support? ",
     answer:
-      "No, we don't offer technical support for free downloads. Please purchase a support plan to get 6 months of support.",
+      "No, we don't offer technical support for your projects. Please purchase a support plan to get 6 months of support.",
   },
 ];
 

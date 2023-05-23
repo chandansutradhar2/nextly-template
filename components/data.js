@@ -11,23 +11,23 @@ import benefitOneImg from "../public/img/benefit-one.png";
 import benefitTwoImg from "../public/img/benefit-two.png";
 
 const benefitOne = {
-  title: "Highlight your benefits",
-  desc: "You can use this space to highlight your first benefit or a feature of your product. It can also contain an image or Illustration like in the example along with some bullet points.",
+  title: "Online Learning Platform",
+  desc: "Our course is desgined to match the cirriculam of your school and boards. this will help you to learn web development & informaiton technology in a fun and easy way.",
   image: benefitOneImg,
   bullets: [
     {
-      title: "Understand your customers",
-      desc: "Then explain the first point breifly in one or two lines.",
+      title: "Increase your score",
+      desc: "By taking our courses, you will see an increse in your marksheet.",
       icon: <FaceSmileIcon />,
     },
     {
-      title: "Improve acquisition",
-      desc: "Here you can add the next benefit point.",
+      title: "Improve computer literacy",
+      desc: "From STD 9 to graduation and beyond, our course are degined to target each semester and each segment of your education.",
       icon: <ChartBarSquareIcon />,
     },
     {
-      title: "Drive customer retention",
-      desc: "This will be your last bullet point in this section.",
+      title: "Live Interactive Session",
+      desc: "This is not JUST ANOTHER VIDEO COURSE. We have live interactive sessions where you can ask your doubts and get them cleared.",
       icon: <CursorArrowRaysIcon />,
     },
   ],
@@ -56,5 +56,4 @@ const benefitTwo = {
   ],
 };
 
-
-export {benefitOne, benefitTwo};
+export { benefitOne, benefitTwo };
