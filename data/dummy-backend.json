@@ -1,0 +1,37 @@
+{
+    "pricing":[
+        {
+          "id": 1,
+          "title": "Free",
+          "price": "0",
+          "currency": "INR",
+          "contents": [
+            "maximum of 3 course enrollment per month",
+            "unlimited view of the course",
+            "2 live event participatation per month"
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Premium Subscription",
+          "price": "399 per month",
+          "currency": "INR",
+          "contents": [
+            "non limit on enrollment",
+            "unlimited view of the course",
+            "10 live event participatation per month"
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Platinum Subscription",
+          "price": "899 per month",
+          "currency": "INR",
+          "contents": [
+            "non limit on enrollment",
+            "unlimited view of the course",
+            "unlimited live event participatation per month"
+          ]
+        }
+      ]
+}
