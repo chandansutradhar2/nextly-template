@@ -2,24 +2,30 @@
 // import path from "path";
 
 import Head from "next/head";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
+import { Inter } from "@next/font/google";
 
+const inter = Inter({
+  style: "normal",
+  weight: ["400", "700"],
+  subsets: ["cyrillic-ext", "greek"],
+});
 export default function Pricing() {
-  const pricing = [];
+  const [pricing, setPricing] = useState([]);
 
   useEffect(() => {
     fetch("dummy-backend.json")
       .then((response) => response.json())
       .then((data) => {
-        console.log(data);
         data.pricing.map((d) => {
-          pricing.push(d);
+          setPricing((prev) => [...prev, d]);
         });
+        console.log(pricing);
       });
   }, []);
 
   return (
-    <>
+    <main className={inter.className}>
       <Head>
         <title>Pricing</title>
         <meta name="description" content="pricing information" />
@@ -28,23 +34,27 @@ export default function Pricing() {
           content="pricing, pricing calculator, subscription, subscribe, price, rate"
         />
       </Head>
-      <div>
-        <h1>Pricing</h1>
+
+      <div className="flex">
         {pricing.map((price) => {
           return (
-            <div key={price.id}>
-              <h2>{price.title} </h2>
-              <h3>{price.price}</h3>
-              <ul>
-                {price.contents.map((content) => {
-                  return <li key={content}>{content}</li>;
-                })}
-              </ul>
+            <div
+              key={price.id}
+              className="max-w-sm rounded overflow-hidden shadow-lg">
+              <div className="px-6 py-4">
+                <div className="font-bold text-xl mb-2">{price.title}</div>
+                <h2>{price.price}</h2>
+                <p className="text-gray-700 text-base">
+                  {price.contents.map((content) => {
+                    return <li key={content}>{content}</li>;
+                  })}
+                </p>
+              </div>
             </div>
           );
         })}
       </div>
-    </>
+    </main>
   );
 }
 

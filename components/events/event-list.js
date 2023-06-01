@@ -7,6 +7,7 @@ export default function EventList(props) {
   return (
     <div className={styles.container}>
       <h1>All Events</h1>
+      
       {events.map((event) => {
         return <EventItem key={event.id} event={event} />;
       })}

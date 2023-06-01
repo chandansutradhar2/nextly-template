@@ -1,6 +1,9 @@
 "use client";
 import { useState } from "react";
 import { PasswordInput } from "../../components/passwordInput";
+//import rightImage from "./benefit-two.png";
+import Image from "next/image";
+
 export default function Login() {
   const [show, setShow] = useState(false);
 
@@ -25,10 +28,12 @@ export default function Login() {
           </button>
         </div>
         {/* Right Side */}
-        <img
-          src="img/benefit-two.png"
+        <Image
+          src={"/img/benefit-two.png"}
           alt="login"
-          className="w-[430px] hidden md:block "
+          width={430}
+          height={430}
+          className="hidden md:block "
         />
       </div>
     </div>
